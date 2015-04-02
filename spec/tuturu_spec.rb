@@ -19,6 +19,14 @@ describe Tuturu do
         is_expected.to be_truthy
       end
     end
+
+    describe '.#Tuturu' do
+      subject { klass.new.Tuturu(klass.new) }
+
+      it "can't be called for a #{klass} instance" do
+        expect { subject }.to raise_error(NoMethodError)
+      end
+    end
   end
 
   [true, false, nil].each do |object|
@@ -35,6 +43,14 @@ describe Tuturu do
       subject { object.to_true }
       it "returns true for #{object_name}" do
         is_expected.to be_truthy
+      end
+    end
+
+    describe '.#Tuturu' do
+      subject { object.Tuturu(object) }
+
+      it "can't be called for #{object_name}" do
+        expect { subject }.to raise_error(NoMethodError)
       end
     end
   end

@@ -10,11 +10,11 @@ module Tuturu
   end
 end
 
-class BasicObject
-  include(::Tuturu::Extension)
-end
+BasicObject.include(::Tuturu::Extension)
 
 module Kernel
+  private
+
   def Tuturu(_)
     tuturu
   end
