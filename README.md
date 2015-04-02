@@ -1,8 +1,12 @@
 # Tuturu
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/tuturu`. To experiment with that code, run `bin/console` for an interactive prompt.
+> Tuturuuuu <br/>
+> -- Mayuri Shiina / Steins;Gate
 
-TODO: Delete this and the text above, and describe your gem
+Cast any object ~~to true~~ **tuturu** !
+
+## Requirements
++ Ruby 1.9.1+
 
 ## Installation
 
@@ -22,17 +26,30 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+true.tuturu  #=> true
+false.tuturu #=> true
+nil.tuturu   #=> true
+Object.new.tuturu #=> true
 
-## Development
+true.to_true  #=> true
+false.to_true #=> true
+nil.to_true   #=> true
+Object.new.to_true #=> true
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
+Tuturu(true)  #=> true
+Tuturu(false) #=> true
+Tuturu(nil)   #=> true
+Tuturu(Object.new) #=> true
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release` to create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+## Credits
+
+This gem is heavily inspired by [ToNil](https://github.com/mrThe/to_nil).
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/tuturu/fork )
+1. Fork it ( https://github.com/quanon/tuturu )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
