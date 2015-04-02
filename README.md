@@ -1,12 +1,12 @@
 # Tuturu
 
-> Tuturuuuu <br/>
+> Tuturuuuu~♪ <br/>
 > -- Mayuri Shiina / Steins;Gate
 
-Cast any object ~~to true~~ **tuturu** !
+Cast everything ~~to true~~ **tuturu**!
 
 ## Requirements
-+ Ruby 1.9.1+
++ Ruby 1.9.3+
 
 ## Installation
 
@@ -30,16 +30,19 @@ Or install it yourself as:
 true.tuturu  #=> true
 false.tuturu #=> true
 nil.tuturu   #=> true
+'Mayushi'.tuturu  #=> true
 Object.new.tuturu #=> true
 
 true.to_true  #=> true
 false.to_true #=> true
 nil.to_true   #=> true
+'Mayushi'.to_true  #=> true
 Object.new.to_true #=> true
 
 Tuturu(true)  #=> true
 Tuturu(false) #=> true
 Tuturu(nil)   #=> true
+Tuturu('Mayushi')  #=> true
 Tuturu(Object.new) #=> true
 ```
 
@@ -54,3 +57,4 @@ This gem is heavily inspired by [ToNil](https://github.com/mrThe/to_nil).
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+6. El Psy Congroo...
