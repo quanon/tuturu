@@ -20,7 +20,7 @@ describe Tuturu do
       end
     end
 
-    describe '.#Tuturu' do
+    describe '#Tuturu' do
       subject { klass.new.Tuturu(klass.new) }
 
       it "can't be called for a #{klass} instance" do
@@ -46,7 +46,7 @@ describe Tuturu do
       end
     end
 
-    describe '.#Tuturu' do
+    describe '#Tuturu' do
       subject { object.Tuturu(object) }
 
       it "can't be called for #{object_name}" do
